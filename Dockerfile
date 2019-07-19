@@ -1,8 +1,5 @@
 FROM node:alpine AS builder
 
-ENV HTTP_PROXY "http://rbcproxy.robinsonsbank.com.ph:80"
-ENV HTTPS_PROXY "http://rbcproxy.robinsonsbank.com.ph:80"
-
 WORKDIR '/app'
 
 COPY package.json .
